@@ -1,0 +1,309 @@
+
+/* Tutorial page background */
+body {
+    background-color: #FFFFFF;
+    padding-top: 6em;
+}
+
+/* Navbar */
+.navbar-default {
+    background: linear-gradient(120deg, #3B145A, #64258A);
+    border-color: #3B145A;
+    box-shadow: 0 0 8px #3B145A, 0 0 16px rgba(59, 20, 90, 0.6);
+}
+
+.navbar-default .navbar-brand {
+    color: #FFB900;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #FFB900;
+}
+
+/* Main tutorial container */
+.tutorial-container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF3B0;
+}
+
+/* Chapter index panel */
+.chapter-panel {
+    background: linear-gradient(160deg, #3B145A, #64258A);
+    border: 1px solid #3B145A;
+    border-radius: 30px;
+    padding: 25px 20px;
+
+    height: 68vh;
+    overflow-y: hidden;
+
+    box-shadow: 0 0 8px #3B145A, 0 0 18px rgba(59, 20, 90, 0.7);
+}
+
+/* Scrollable chapter list */
+.chapter-list {
+    max-height: calc(75vh - 125px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+    margin-bottom: 0;
+}
+
+/* Chapter list scrollbar */
+.chapter-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chapter-list::-webkit-scrollbar-track {
+    background: #3B145A;
+}
+
+.chapter-list::-webkit-scrollbar-thumb {
+    background: #FFB900;
+    border-radius: 10px;
+}
+
+/* Chapter index scrollbar */
+.chapter-panel::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chapter-panel::-webkit-scrollbar-track {
+    background: #3B145A;
+    border-radius: 10px;
+}
+
+.chapter-panel::-webkit-scrollbar-thumb {
+    background: #FFB900;
+    border-radius: 10px;
+}
+
+.chapter-panel::-webkit-scrollbar-thumb:hover {
+    background: #D99E00;
+}
+
+/* All Chapters heading */
+.chapter-heading {
+    color: #FFB900;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.chapter-heading .glyphicon {
+    margin-right: 10px;
+}
+
+/* Separator */
+.chapter-panel hr {
+    border-color: rgba(255,255,255,0.3);
+    margin-bottom: 22px;
+}
+
+/* Chapter list */
+.chapter-list li {
+    margin-bottom: 6px;
+}
+
+.chapter-list li a {
+    display: block;
+    background-color: rgba(255,255,255,0.18);
+    color: #FFF3B0;
+    border-radius: 13px;
+    padding: 14px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+/* Chapter numbers */
+.chapter-number {
+    display: inline-block;
+    color: #FFB900;
+    background-color: rgba(255,255,255,0.15);
+    border: 1px solid #FFB900;
+    border-radius: 8px;
+    padding: 6px 8px;
+    margin-right: 10px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+/* Active chapter */
+.chapter-list li.active a,
+.chapter-list li.active a:hover,
+.chapter-list li.active a:focus {
+    background-color: #FFB900;
+    color: #3B145A;
+    border-color: #FFB900;
+}
+
+.chapter-list li.active .chapter-number {
+    background-color: #3B145A;
+    color: #FFB900;
+    border-color: #FFB900;
+}
+
+/* Chapter hover */
+.chapter-list li:not(.active) a:hover {
+    background-color: rgba(255,255,255,0.35);
+    color: #FFF3B0;
+}
+
+/* Introduction content */
+#main-content .card {
+    width: 100%;
+    margin: 5px auto 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #3B145A;
+    border-radius: 15px;
+
+    box-shadow: 0 0 8px #3B145A, 0 0 18px rgba(59, 20, 90, 0.6);
+}
+
+#main-content .card-block {
+    padding: 20px;
+}
+
+/* Introduction image */
+.introduction-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Chapter title */
+.chapter-title {
+    background: linear-gradient(120deg, #3B145A, #64258A);
+    color: #FFB900;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Responsive layout */
+@media (max-width: 991px) {
+    #chapter-index {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Next Chapter Button */
+.navbar-default .navbar-nav > li > a.next-button {
+    display: inline-block;
+    border: 2px solid #FFB900;
+    border-radius: 6px;
+
+    padding: 4px 18px !important;
+    margin-top: 12px;
+    margin-right: 15px;
+
+    color: #FFB900 !important;
+    background: transparent !important;
+
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-default .navbar-nav > li > a.next-button:hover {
+    background-color: #FFB900 !important;
+    color: #3B145A !important;
+    border-color: #FFB900;
+}
+
+/* Previous Chapter Button */
+.navbar-default .navbar-nav > li > a.previous-button {
+    display: inline-block;
+    border: 2px solid #FFB900;
+    border-radius: 6px;
+    padding: 4px 18px !important;
+    margin-top: 12px;
+    margin-right: 10px;
+    color: #FFB900 !important;
+    background: transparent !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a.previous-button:hover {
+    background-color: #FFB900 !important;
+    color: #3B145A !important;
+}
+
+
+/* Chapter Progress Card */
+.progress-card {
+    background: #A65F50;
+    border: 1px solid #54251F;
+    border-radius: 18px;
+
+    padding: 20px 22px;
+    margin-top: 15px;
+
+    box-shadow:
+        0 0 6px #54251F,
+        0 0 14px rgba(84, 37, 31, 0.65),
+        0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress Information */
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 14px;
+
+    color: #AAB8CC;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.progress-count {
+    color: #18C77A;
+    font-size: 15px;
+}
+
+/* Progress Track */
+.progress-track {
+    width: 100%;
+    height: 8px;
+
+    background-color: #854B43;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+/* Progress Fill */
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #13A66B, #27D98C);
+
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+
+/* Fixed Chapter Sidebar */
+#chapter-index {
+    position: sticky;
+    top: 85px;
+    align-self: flex-start;
+}
+
+.tutorial-row {
+    display: flex;
+    align-items: flex-start;
+}
